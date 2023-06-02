@@ -1,0 +1,22 @@
+{
+  "name": "hamilton-8-kababi-jason-sarah-project-kababi",
+  "version": "1.0.0",
+  "description": "Project Kababi",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becodeorg/hamilton-8-kababi-jason-sarah-project-kababi.git"
+  },
+  "author": "Jason Sarah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/becodeorg/hamilton-8-kababi-jason-sarah-project-kababi/issues"
+  },
+  "homepage": "https://github.com/becodeorg/hamilton-8-kababi-jason-sarah-project-kababi#readme",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
