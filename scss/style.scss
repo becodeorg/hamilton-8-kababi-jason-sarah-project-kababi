@@ -1,7 +1,7 @@
-@use '../scss/bases/font' as *;
-@use '../scss/bases/reset' as *;
-@use '../scss/layout/body' as *;
-@use '../scss/layout/footer' as *;
-@use '../scss/layout/header' as *;
-@use '../scss/utils/mixins' as *;
-@use '../scss/utils/variables' as *;
+@import "../scss/utils/variables";
+@import "../scss/utils/mixins";
+@import "../scss/bases/font";
+@import "../scss/bases/reset";
+@import "../scss/layout/body";
+@import "../scss/layout/footer";
+@import "../scss/layout/header";
