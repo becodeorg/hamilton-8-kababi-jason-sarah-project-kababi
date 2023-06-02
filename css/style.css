@@ -1,3 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
 
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+footer {
+  background: url(../assets/img/footer/img-ng-footer.jpg);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 4rem 10rem;
+}
+footer .section-title-footer {
+  display: flex;
+  justify-content: center;
+}
+footer .section-footer-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+  gap: 0 2rem;
+  padding: 4rem 0;
+}
+footer .section-footer-list ul li {
+  padding: 0.5rem 0;
+  line-height: 30px;
+}
+footer .section-footer-list .flex-double {
+  grid-column: 3/5;
+  padding: 0 2rem;
+}
+footer .section-footer-list .flex-double form input {
+  padding: 0.5rem 1rem;
+  width: 90%;
+  height: 60px;
+  outline: none;
+  font-size: 18px;
+}
+footer .section-footer-list .contact-list {
+  grid-column: 5/7;
+  padding: 0 3rem;
+}
+footer .separator-footer {
+  height: 2px;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+footer .section-copyright {
+  display: flex;
+  justify-content: space-between;
+}
+footer .section-copyright .copyright-icon-list {
+  display: flex;
+  gap: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */
