@@ -1,6 +1,6 @@
-@use '../scss/bases/font' as *;
-@use '../scss/bases/reset' as *;
-@use '../scss/layout/footer' as *;
-@use '../scss/layout/header' as *;
-@use '../scss/utils/mixins' as *;
-@use '../scss/utils/variables' as *;
+@use "utils/variables" as *;
+@use '../scss/bases/font';
+@use '../scss/bases/reset';
+@use '../scss/utils/mixins';
+@use '../scss/layout/footer';
+@use '../scss/layout/header';
