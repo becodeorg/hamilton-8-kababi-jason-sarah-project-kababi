@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 @use "utils/variables" as *;
 @use '../scss/bases/font';
 @use '../scss/bases/reset';
 @use '../scss/utils/mixins';
 @use '../scss/layout/footer';
 @use '../scss/layout/header';
+=======
+@import "../scss/utils/variables";
+@import "../scss/utils/mixins";
+@import "../scss/bases/font";
+@import "../scss/bases/reset";
+@import "../scss/layout/body";
+@import "../scss/layout/footer";
+@import "../scss/layout/header";
+@import "../scss/layout/1024px";
+>>>>>>> 9990395b996919cf8c204c043740ae6b10abf725
