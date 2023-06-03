@@ -3,7 +3,7 @@ header{
     background-image: url(../assets/img/slider/img_bg_slider_home01.jpg);
     background:linear-gradient(to bottom right, $black, $transparent-black),#{url(../assets/img/slider/img_bg_slider_home01.jpg)};
     color: $white;
-    height: 800px;
+    height: 100vh;
         .navbar{
             display: flex;
             justify-content: space-between;

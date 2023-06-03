@@ -6,7 +6,8 @@ footer {
   color: $generalWhite;
   padding: 3rem 10rem;
   font-size: 18px;
-
+  min-width: 100%;
+  background-size:cover;
   .section-title-footer {
     display: flex;
     justify-content: center;
