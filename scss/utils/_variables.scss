@@ -4,5 +4,13 @@ $white:#fff;
 $black:black;
 $transparent-black:rgba(0, 0, 0, 0.332);
 $color: red;
-$fontFamily: "Faustina", serif;
 $generalWhite: #ffffff;
+$white-transparent:#ffffff7b;
+
+/*baground*/
+$bg-nav:linear-gradient(to bottom right, $black, $transparent-black), #{url(../assets/img/slider/img_bg_slider_home01.jpg)};
+
+/*font*/
+$fontFamily: "Faustina", serif;
+$font-nav:1.5rem;
+$fonth1:6rem;

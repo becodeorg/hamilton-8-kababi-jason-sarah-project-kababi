@@ -1,0 +1,23 @@
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin space-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin colonne{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin space-around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
