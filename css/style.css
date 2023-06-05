@@ -241,6 +241,16 @@ header .section-nav .bouton2 p {
   color: #fff;
 }
 
+.section-photo-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-photo-gallery .container-title-photo-gallery {
+  text-align: center;
+  color: black;
+}
+
 .section-our-chefs {
   background: url(../assets/img/our-chefs/imgbg-ourchefs.jpg) no-repeat center/cover;
   display: flex;
