@@ -1,0 +1,49 @@
+.section-our-chefs {
+  background: url(../assets/img/our-chefs/imgbg-ourchefs.jpg) no-repeat
+    center/cover;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+  padding: 8rem 6rem;
+  position: relative;
+
+  .container-title-our-chefs {
+    text-align: center;
+    font-family: $fontTextArticleBlog;
+
+    h2 {
+      font-weight: 400;
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .subTitle {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .textBgOurChefs {
+      position: absolute;
+      top: 7%;
+      left: 0;
+      font-size: 12.2vw;
+      opacity: 0.1;
+      color: $bgTextOurChefs;
+    }
+  }
+
+  .container-img-all-chefs {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    figure {
+      img {
+        max-width: 100%;
+        display: block;
+      }
+    }
+  }
+}

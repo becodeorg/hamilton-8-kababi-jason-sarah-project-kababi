@@ -241,101 +241,47 @@ header .section-nav .bouton2 p {
   color: #fff;
 }
 
-@media screen and (max-width: 1280px) {
-  footer {
-    padding: 2rem 1rem;
-  }
-  footer .section-footer-list {
-    gap: 0 1.5rem;
-  }
-  footer .section-footer-list ul li {
-    padding: 0.2rem 0;
-    line-height: 18px;
-  }
-  footer .section-footer-list ul li h3 {
-    font-size: 22px;
-    margin-bottom: 0.5rem;
-  }
-  footer .section-footer-list ul li a {
-    font-size: 14px;
-  }
-  footer .section-footer-list ul li i {
-    font-size: 14px;
-    margin-right: 0.5rem;
-  }
-  footer .section-footer-list .flex-double {
-    padding: 0;
-  }
-  footer .section-footer-list .flex-double li {
-    font-size: 14px;
-  }
-  footer .section-footer-list .flex-double li p {
-    margin-bottom: 0.5rem;
-  }
-  footer .section-footer-list .flex-double li form input {
-    height: 30px;
-    font-size: 14px;
-  }
-  footer .section-footer-list .flex-double li form div {
-    height: 30px;
-    width: 30px;
-  }
-  footer .section-footer-list .contact-list {
-    padding: 0;
-  }
-  footer .separator-footer {
-    margin-bottom: 3rem;
-  }
-  footer .separator-footer figure {
-    transform: translate(-25%, -35%);
-  }
-  footer .section-copyright {
-    font-size: 12px;
-  }
+.section-our-chefs {
+  background: url(../assets/img/our-chefs/imgbg-ourchefs.jpg) no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+  padding: 8rem 6rem;
+  position: relative;
 }
-@media screen and (max-width: 640px) {
-  footer {
-    padding: 2rem 0;
-  }
-  footer .section-footer-list {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0 2rem;
-    padding: 2rem;
-  }
-  footer .section-footer-list ul {
-    padding: 0 0 1rem 0;
-  }
-  footer .section-footer-list .flex-double {
-    grid-column: 2/3;
-  }
-  footer .section-footer-list .contact-list {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  footer .section-copyright {
-    padding: 0.5rem 2rem;
-  }
+.section-our-chefs .container-title-our-chefs {
+  text-align: center;
+  font-family: "Frank Ruhl Libre", serif;
 }
-@media screen and (max-width: 550px) {
-  footer {
-    padding: 1rem 0;
-  }
-  footer .section-footer-list {
-    padding: 2rem 1rem;
-  }
-  footer .section-copyright {
-    flex-direction: column;
-    padding: 0.5rem 1rem;
-  }
-  footer .section-copyright .copyright-icon-list {
-    margin-bottom: 1rem;
-  }
-  footer .section-copyright p {
-    text-align: center;
-    order: 2;
-  }
+.section-our-chefs .container-title-our-chefs h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
 }
+.section-our-chefs .container-title-our-chefs .subTitle {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.section-our-chefs .container-title-our-chefs .textBgOurChefs {
+  position: absolute;
+  top: 7%;
+  left: 0;
+  font-size: 12.2vw;
+  opacity: 0.1;
+  color: #414141;
+}
+.section-our-chefs .container-img-all-chefs {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.section-our-chefs .container-img-all-chefs figure img {
+  max-width: 100%;
+  display: block;
+}
+
 .section-blog {
   background: #fff;
   color: #1e1e1e;
@@ -438,6 +384,307 @@ header .section-nav .bouton2 p {
   width: 100%;
   height: auto;
   filter: grayscale(1);
+}
+
+@media screen and (max-width: 1280px) {
+  .section-our-chefs {
+    padding: 6rem 4rem;
+  }
+  .section-our-chefs .container-title-our-chefs .textBgOurChefs {
+    font-size: 13.5vw;
+  }
+  .section-blog {
+    padding: 4rem 5rem;
+  }
+  .section-blog .container-all-article .container-text-article {
+    padding: 1rem 1rem;
+  }
+  .section-blog .container-all-article .container-text-article .container-author p {
+    font-size: 12px;
+  }
+  .section-blog .container-all-article .container-text-article p {
+    font-size: 16px;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog {
+    padding: 0.6rem 0.9rem;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog a {
+    font-size: 14px;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog i {
+    font-size: 12px;
+  }
+  .section-blog .container-all-logo-blog {
+    gap: 3.7rem;
+  }
+  .section-blog .container-all-logo-blog figure {
+    display: flex;
+    justify-content: center;
+  }
+  .section-blog .container-all-logo-blog figure img {
+    max-width: 80%;
+  }
+  footer {
+    padding: 2rem 1rem;
+  }
+  footer .section-footer-list {
+    gap: 0 1.5rem;
+  }
+  footer .section-footer-list ul li {
+    padding: 0.2rem 0;
+    line-height: 18px;
+  }
+  footer .section-footer-list ul li h3 {
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+  }
+  footer .section-footer-list ul li a {
+    font-size: 14px;
+  }
+  footer .section-footer-list ul li i {
+    font-size: 14px;
+    margin-right: 0.5rem;
+  }
+  footer .section-footer-list .flex-double {
+    padding: 0;
+  }
+  footer .section-footer-list .flex-double li {
+    font-size: 14px;
+  }
+  footer .section-footer-list .flex-double li p {
+    margin-bottom: 0.5rem;
+  }
+  footer .section-footer-list .flex-double li form input {
+    height: 30px;
+    font-size: 14px;
+  }
+  footer .section-footer-list .flex-double li form div {
+    height: 30px;
+    width: 30px;
+  }
+  footer .section-footer-list .contact-list {
+    padding: 0;
+  }
+  footer .separator-footer {
+    margin-bottom: 3rem;
+  }
+  footer .separator-footer figure {
+    transform: translate(-25%, -35%);
+  }
+  footer .section-copyright {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-our-chefs {
+    padding: 6rem 4rem;
+  }
+  .section-our-chefs .container-title-our-chefs h2 {
+    font-size: 1.5rem;
+  }
+  .section-our-chefs .container-title-our-chefs .subTitle {
+    font-size: 0.8rem;
+  }
+  .section-blog {
+    padding: 1.5rem 3rem;
+    gap: 2rem;
+  }
+  .section-blog .container-title-blog .textBgBlog {
+    font-size: 13.5vw;
+    top: -3%;
+  }
+  .section-blog .container-all-article {
+    gap: 1rem;
+  }
+  .section-blog .container-all-article .article-blog {
+    max-width: 35%;
+  }
+  .section-blog .container-all-article .container-text-article {
+    padding: 1rem 1rem;
+  }
+  .section-blog .container-all-article .container-text-article .container-author p {
+    font-size: 0.5rem;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog a {
+    font-size: 0.625rem;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog i {
+    font-size: 0.5rem;
+  }
+  .section-blog .container-all-logo-blog {
+    gap: 3rem;
+  }
+  .section-blog .container-all-logo-blog figure {
+    display: flex;
+    justify-content: center;
+  }
+  .section-blog .container-all-logo-blog figure img {
+    max-width: 65%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section-blog .container-title-blog .textBgBlog {
+    top: 0;
+  }
+  .section-blog .container-all-article {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-blog .container-all-article .article-blog {
+    max-width: 50%;
+  }
+  .section-blog .container-all-article .container-text-article .container-author p {
+    margin-bottom: 0.5rem;
+  }
+  .section-blog .container-all-article .container-text-article .container-author i {
+    margin-bottom: 0.5rem;
+  }
+  .section-blog .container-all-article .container-text-article p {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .section-our-chefs {
+    gap: 1.5rem;
+    padding: 4rem 2rem;
+  }
+  .section-our-chefs .container-title-our-chefs h2 {
+    font-size: 1rem;
+  }
+  .section-our-chefs .container-title-our-chefs .subTitle {
+    font-size: 0.6rem;
+  }
+  .section-our-chefs .container-title-our-chefs .textBgOurChefs {
+    top: 10%;
+  }
+  .section-our-chefs .container-img-all-chefs {
+    gap: 0.8rem;
+  }
+  .section-blog .container-title-blog h2 {
+    font-size: 1.25rem;
+  }
+  .section-blog .container-title-blog .subTitle {
+    font-size: 0.625rem;
+  }
+  .section-blog .container-all-article .container-text-article {
+    padding: 0.5rem 0.5rem;
+  }
+  .section-blog .container-all-article .container-text-article .container-author p {
+    font-size: 0.375rem;
+  }
+  .section-blog .container-all-article .container-text-article p {
+    font-size: 0.625rem;
+    margin-bottom: 1rem;
+    line-height: 0.8rem;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog {
+    padding: 0.5rem 0.8rem;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog a {
+    font-size: 0.5rem;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog i {
+    font-size: 0.375rem;
+  }
+  .section-blog .container-all-logo-blog {
+    gap: 1rem;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+  footer .section-footer-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0 2rem;
+    padding: 2rem;
+  }
+  footer .section-footer-list ul {
+    padding: 0 0 1rem 0;
+  }
+  footer .section-footer-list .flex-double {
+    grid-column: 2/3;
+  }
+  footer .section-footer-list .contact-list {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  footer .section-copyright {
+    padding: 0.5rem 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section-our-chefs {
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .section-our-chefs .container-title-our-chefs h2 {
+    font-size: 0.8rem;
+  }
+  .section-our-chefs .container-title-our-chefs .subTitle {
+    font-size: 0.5rem;
+  }
+  .section-our-chefs .container-title-our-chefs .textBgOurChefs {
+    top: 4%;
+  }
+  .section-our-chefs .container-img-all-chefs {
+    gap: 0.6rem;
+  }
+  .section-blog {
+    gap: 1rem;
+    padding: 1rem 3rem;
+  }
+  .section-blog .container-title-blog h2 {
+    font-size: 0.875rem;
+  }
+  .section-blog .container-title-blog .subTitle {
+    font-size: 0.375rem;
+  }
+  .section-blog .container-all-article .article-blog {
+    max-width: 80%;
+  }
+  .section-blog .container-all-article .container-text-article {
+    padding: 0.5rem 0.5rem;
+  }
+  .section-blog .container-all-article .container-text-article .container-author p {
+    font-size: 0.375rem;
+  }
+  .section-blog .container-all-article .container-text-article .container-author i {
+    font-size: 0.25rem;
+  }
+  .section-blog .container-all-article .container-text-article p {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 0.8rem;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog {
+    padding: 0.2rem 0.5rem;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog a {
+    font-size: 0.375rem;
+  }
+  .section-blog .container-all-article .container-text-article .btn-blog i {
+    font-size: 0.25rem;
+  }
+  .container-all-logo-blog {
+    gap: 1rem;
+  }
+  footer {
+    padding: 1rem 0;
+  }
+  footer .section-footer-list {
+    padding: 2rem 1rem;
+  }
+  footer .section-copyright {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+  footer .section-copyright .copyright-icon-list {
+    margin-bottom: 1rem;
+  }
+  footer .section-copyright p {
+    text-align: center;
+    order: 2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
