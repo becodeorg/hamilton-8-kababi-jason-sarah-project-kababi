@@ -1,6 +1,8 @@
 header{
     height: 100vh;
     background:$bg-nav;
+    background-size: cover;
+    
 
     .navbar{
         @include space-around;
@@ -25,30 +27,35 @@ header{
                 }
             }
         }
-        .tel{
-            @include center();
-            width: 10%;
-            #tel{
-                font-size: $font-nav;
+        .nav-nav-bar{
+            @include space-around();
+            width: 25%;
+            .tel{
+                @include center();
+                width: 10%;
+                #tel{
+                    font-size: $font-nav;
+                }
+            }
+    
+            .bouton-nav{
+                @include space-around();
+                background-color: $gold;
+                padding: 2%;
+                border-radius: 5px;
+                width: 50%;
+                .reservation{
+                    font-size: $font-nav;
+                    color: $white;
+                }
             }
         }
-
-        .bouton-nav{
-            @include space-between();
-            background-color: $gold;
-            padding: 12px;
-            border-radius: 5px;
-            width: 12%;
-            .reservation{
-                font-size: $font-nav;
-                color: $white;
-            }
-        }
+        
     }
     .fleche{
         position: relative;
-        top:150px;
-        left:650px ;
+        top:15%;
+        left:34%; ;
     }
     .section-nav{
         @include colonne();
@@ -65,7 +72,7 @@ header{
         .bouton2{
             @include space-around();
             width: 45%;
-            padding: 2%;
+            padding: 1%;
             border: solid $white-transparent 2px;
             border-radius: 5px;
             p{

@@ -66,6 +66,17 @@
         font-size: 12px;
       }
     }
+
+    header{
+      .navbar{
+        ul{
+          display: none;
+        }
+        .nav-nav-bar{
+          display: none;
+        }
+      }
+    }
   }
   
   @media screen and (max-width: 640px) {

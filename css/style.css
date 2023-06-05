@@ -152,6 +152,7 @@ footer .section-copyright .copyright-icon-list {
 header {
   height: 100vh;
   background: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.332)), url(../assets/img/slider/img_bg_slider_home01.jpg);
+  background-size: cover;
 }
 header .navbar {
   display: flex;
@@ -175,38 +176,44 @@ header .navbar ul .nav-links {
 }
 header .navbar ul .nav-links .nav-active {
   color: #C8A969;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 header .navbar ul .nav-links .nav-link {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
-header .navbar .tel {
+header .navbar .nav-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+}
+header .navbar .nav-nav-bar .tel {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 10%;
 }
-header .navbar .tel #tel {
-  font-size: 1.5rem;
+header .navbar .nav-nav-bar .tel #tel {
+  font-size: 1.2rem;
 }
-header .navbar .bouton-nav {
+header .navbar .nav-nav-bar .bouton-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #C8A969;
-  padding: 12px;
+  padding: 2%;
   border-radius: 5px;
-  width: 12%;
+  width: 50%;
 }
-header .navbar .bouton-nav .reservation {
-  font-size: 1.5rem;
+header .navbar .nav-nav-bar .bouton-nav .reservation {
+  font-size: 1.2rem;
   color: #fff;
 }
 header .fleche {
   position: relative;
-  top: 150px;
-  left: 650px;
+  top: 15%;
+  left: 34%;
 }
 header .section-nav {
   display: flex;
@@ -228,12 +235,12 @@ header .section-nav .bouton2 {
   align-items: center;
   justify-content: space-around;
   width: 45%;
-  padding: 2%;
+  padding: 1%;
   border: solid rgba(255, 255, 255, 0.4823529412) 2px;
   border-radius: 5px;
 }
 header .section-nav .bouton2 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Faustina", serif;
   color: #fff;
 }
@@ -288,6 +295,12 @@ header .section-nav .bouton2 p {
   }
   footer .section-copyright {
     font-size: 12px;
+  }
+  header .navbar ul {
+    display: none;
+  }
+  header .navbar .nav-nav-bar {
+    display: none;
   }
 }
 @media screen and (max-width: 640px) {
