@@ -20,9 +20,10 @@
     <title>Kababi</title>
   </head>
   <body>
-    <!-- <header>
-      <nav class="navbar">
-        <img class="logo" src="../assets/img/logo/logo@2x.png" alt="logo" />
+    <nav class="navbar" role="navigation">
+      <img class="logo" src="../assets/img/logo/logo@2x.png" alt="logo" />
+
+      <div class="nav">
         <ul>
           <li class="nav-links">
             <a class="nav-active" href="#">Home</a>
@@ -52,19 +53,29 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <div class="tel">
-          <p class="nav-link">
-            <i class="fa-solid fa-phone-flip" style="color: #c8a969"></i>
-          </p>
-          <p id="tel">+012(345)6789</p>
+        <div class="nav-nav-bar">
+          <div class="tel">
+            <p class="nav-link">
+              <i class="fa-solid fa-phone-flip" style="color: #c8a969"></i>
+            </p>
+            <p id="tel">+012(345)6789</p>
+          </div>
+          <a href="#" class="bouton-nav">
+            <p class="reservation">BOOK A TABLE</p>
+            <p class="nav-link">
+              <i class="fa-solid fa-arrow-right" style="color: #fff"></i>
+            </p>
+          </a>
         </div>
-        <a href="#" class="bouton-nav">
-          <p class="reservation">BOOK A TABLE</p>
-          <p class="nav-link">
-            <i class="fa-solid fa-arrow-right" style="color: #fff"></i>
-          </p>
-        </a>
-      </nav>
+      </div>
+    </nav>
+
+    <img
+      class="burger"
+      src="assets/img/burger-menu/menu-btn.png"
+      alt="bg-menu"
+    />
+    <header>
       <img
         class="fleche"
         src="assets/img/slider/img_bg2.png"
@@ -77,36 +88,7 @@
           <p class="nav-link"><i class="fa-solid fa-arrow-right"></i></p>
         </a>
       </section>
-    </header> -->
-    <section class="section-photo-gallery">
-      <article>
-        <div class="container-title-photo-gallery">
-          <h2>RESTAURANTS PHOTO GALLERY</h2>
-          <p class="subTitle">Best foods for you & family</p>
-          <p class="textBgPhotoGallery">GALLERY</p>
-        </div>
-        <div class="container-photo-gallery">
-          <figure>
-            <img src="./assets/img/gallery/img1gallerybox.jpg" alt="food 1" />
-          </figure>
-          <figure>
-            <img src="./assets/img/gallery/img2gallerybox.jpg" alt="food 2" />
-          </figure>
-          <figure>
-            <img src="./assets/img/gallery/img3gallerybox.jpg" alt="food 3" />
-          </figure>
-          <figure>
-            <img src="./assets/img/gallery/img4gallerybox.jpg" alt="food 4" />
-          </figure>
-          <figure>
-            <img src="./assets/img/gallery/img5gallerybox.jpg" alt="food 5" />
-          </figure>
-          <figure>
-            <img src="./assets/img/gallery/img6gallerybox.jpg" alt="food 6" />
-          </figure>
-        </div>
-      </article>
-    </section>
+    </header>
 
     <section class="section-our-chefs">
       <div class="container-title-our-chefs">
@@ -333,4 +315,12 @@
       </section>
     </footer>
   </body>
+  <script>
+    const menuHamburger = document.querySelector(".burger");
+    const navLinks = document.querySelector(".nav");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
 </html>
