@@ -20,64 +20,55 @@
     <title>Kababi</title>
   </head>
   <body>
-    <!-- <header>
-      <nav class="navbar">
-        <img class="logo" src="../assets/img/logo/logo@2x.png" alt="logo" />
+    <nav class="navbar" role="navigation">
+      <img class="logo" src="../assets/img/logo/logo@2x.png" alt="logo">
+
+      <div class="nav">
         <ul>
           <li class="nav-links">
-            <a class="nav-active" href="#">Home</a>
-            <p class="nav-active">
-              <i class="fa-solid fa-chevron-down" style="color: #c8a969"></i>
-            </p>
+              <a class="nav-active" href="#">Home</a>
+              <p class="nav-active"><i class="fa-solid fa-chevron-down" style="color: #c8a969;"></i></p>
           </li>
           <li class="nav-links">
-            <a class="nav-link" href="#">About</a>
-            <p class="nav-link">
-              <i class="fa-solid fa-chevron-down" style="color: #fff"></i>
-            </p>
+              <a class="nav-link" href="#">About</a>
+              <p class="nav-link"><i class="fa-solid fa-chevron-down" style="color: #fff;"></i></p>
           </li>
           <li class="nav-links">
-            <a class="nav-link" href="#">Page</a>
-            <p class="nav-link">
-              <i class="fa-solid fa-chevron-down" style="color: #fff"></i>
-            </p>
+              <a class="nav-link" href="#">Page</a>
+              <p class="nav-link"><i class="fa-solid fa-chevron-down" style="color: #fff;"></i></p>
           </li>
           <li class="nav-links">
-            <a class="nav-link" href="#">Shop</a>
-            <p class="nav-link">
-              <i class="fa-solid fa-chevron-down" style="color: #fff"></i>
-            </p>
+              <a class="nav-link" href="#">Shop</a>
+              <p class="nav-link"><i class="fa-solid fa-chevron-down" style="color: #fff;"></i></p>
           </li>
           <li class="nav-links">
-            <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <div class="tel">
-          <p class="nav-link">
-            <i class="fa-solid fa-phone-flip" style="color: #c8a969"></i>
-          </p>
-          <p id="tel">+012(345)6789</p>
+        <div class="nav-nav-bar">
+          <div class="tel">
+            <p class="nav-link"><i class="fa-solid fa-phone-flip" style="color:#C8A969"></i> </p>
+            <p id="tel">+012(345)6789</p>
         </div>
         <a href="#" class="bouton-nav">
-          <p class="reservation">BOOK A TABLE</p>
-          <p class="nav-link">
-            <i class="fa-solid fa-arrow-right" style="color: #fff"></i>
-          </p>
+            <p class="reservation">BOOK A TABLE</p>
+            <p class="nav-link"><i class="fa-solid fa-arrow-right" style="color:#fff"></i></p>
         </a>
-      </nav>
-      <img
-        class="fleche"
-        src="assets/img/slider/img_bg2.png"
-        alt="quality-food"
-      />
-      <section class="section-nav">
-        <h1>BEST QUALITY FOODS</h1>
-        <a class="bouton2" href="#">
-          <p>EXPLORE OUR MENU</p>
-          <p class="nav-link"><i class="fa-solid fa-arrow-right"></i></p>
-        </a>
-      </section>
-    </header> -->
+        </div>
+      </div>
+    </nav>
+    
+    <img class="burger" src="assets/img/burger-menu/menu-btn.png" alt="bg-menu">
+    <header>
+       <img class="fleche" src="assets/img/slider/img_bg2.png" alt="quality-food">
+        <section class="section-nav">
+            <h1>BEST QUALITY FOODS</h1>
+            <a class="bouton2" href="#">
+                <p>EXPLORE OUR MENU</p>
+                <p class="nav-link"><i class="fa-solid fa-arrow-right"></i></p>
+            </a>
+        </section>
+    </header>
 
     <section class="section-our-chefs">
       <div class="container-title-our-chefs">
@@ -304,4 +295,14 @@
       </section>
     </footer>
   </body>
+  <script>
+    const menuHamburger = document.querySelector(".burger")
+    const navLinks = document.querySelector(".nav")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
 </html>
+
+

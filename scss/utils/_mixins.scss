@@ -21,3 +21,10 @@
     align-items: center;
     justify-content: space-around;
 }
+
+@mixin colonne1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
