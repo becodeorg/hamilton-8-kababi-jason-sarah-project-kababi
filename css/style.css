@@ -338,6 +338,7 @@ header {
 .section-photo-gallery .container-photo-gallery figure img {
   max-width: 100%;
   display: block;
+  height: 100%;
 }
 .section-photo-gallery .container-photo-gallery .photo-gallery01 {
   grid-column: span 2;
@@ -512,6 +513,16 @@ header {
 }
 
 @media screen and (max-width: 1280px) {
+  .section-photo-gallery .container-title-photo-gallery h2 {
+    font-size: 1.8rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery .textBgPhotoGallery {
+    font-size: 13.1vw;
+    top: 3%;
+  }
+  .section-photo-gallery .container-photo-gallery {
+    gap: 1.2rem;
+  }
   .section-our-chefs {
     padding: 6rem 4rem;
   }
@@ -601,6 +612,23 @@ header {
   }
 }
 @media screen and (max-width: 1024px) {
+  .section-photo-gallery {
+    gap: 2.3rem;
+    padding: 4rem 5rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery h2 {
+    font-size: 1.3rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery .textBgPhotoGallery {
+    font-size: 13.1vw;
+    top: 3%;
+  }
+  .section-photo-gallery .container-photo-gallery {
+    gap: 1rem;
+  }
+  .section-photo-gallery .btn-gallery {
+    font-size: 0.7rem;
+  }
   .section-our-chefs {
     padding: 6rem 4rem;
   }

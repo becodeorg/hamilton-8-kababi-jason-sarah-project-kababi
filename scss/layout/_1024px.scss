@@ -1,4 +1,20 @@
 @media screen and (max-width: 1280px) {
+  .section-photo-gallery {
+    .container-title-photo-gallery {
+      h2 {
+        font-size: 1.8rem;
+      }
+      .textBgPhotoGallery {
+        font-size: 13.1vw;
+        top: 3%;
+      }
+    }
+
+    .container-photo-gallery {
+      gap: 1.2rem;
+    }
+  }
+
   .section-our-chefs {
     padding: 6rem 4rem;
     .container-title-our-chefs {
@@ -121,6 +137,28 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .section-photo-gallery {
+    gap: 2.3rem;
+    padding: 4rem 5rem;
+    .container-title-photo-gallery {
+      h2 {
+        font-size: 1.3rem;
+      }
+      .textBgPhotoGallery {
+        font-size: 13.1vw;
+        top: 3%;
+      }
+    }
+
+    .container-photo-gallery {
+      gap: 1rem;
+    }
+
+    .btn-gallery {
+      font-size: 0.7rem;
+    }
+  }
+
   .section-our-chefs {
     padding: 6rem 4rem;
     .container-title-our-chefs {
@@ -236,30 +274,30 @@
 
       .textBgOurChefs {
         top: 10%;
-      }  
+      }
     }
   }
-          
+
   @media screen and (max-width: 640px) {
-    header{
-      .fleche{
+    header {
+      .fleche {
         position: absolute;
         left: 150px;
+      }
+      .section-nav {
+        @include colonne();
+        position: relative;
+        width: 40%;
+        top: 250px;
+        height: 60%;
+        h1 {
+          font-size: $fonth1-2;
+          top: 50%;
         }
-        .section-nav{
-          @include colonne();
-          position: relative;
-          width: 40%;
-          top: 250px;;
-          height: 60%;
-          h1{
-              font-size: $fonth1-2;
-              top: 50%;
-          }
-          .bouton2{
-            width: 100%;
-            text-align: center;
-          }
+        .bouton2 {
+          width: 100%;
+          text-align: center;
+        }
       }
     }
     footer {
@@ -269,21 +307,21 @@
         grid-template-rows: 1fr 1fr;
         gap: 0 2rem;
         padding: 2rem;
-  
+
         ul {
           padding: 0 0 1rem 0;
         }
-  
+
         .flex-double {
           grid-column: 2 / 3;
         }
-  
+
         .contact-list {
           grid-column: 2 / 3;
           grid-row: 1 / 2;
         }
       }
-  
+
       .section-copyright {
         padding: 0.5rem 2rem;
       }
@@ -461,63 +499,62 @@
     }
   }
 }
-  @media screen and (max-width:1110px){
-    .navbar{
-      width: 100%;
+@media screen and (max-width: 1110px) {
+  .navbar {
+    width: 100%;
+    height: 100vh;
+
+    .logo {
+      position: absolute;
+      left: 40px;
+      top: 40px;
+    }
+
+    .nav {
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      left: 5%;
+      @include colonne1();
       height: 100vh;
-      
-      .logo{
-        position: absolute;
-        left: 40px;
-        top: 40px;
-      }
-
-      .nav{
-        position: absolute;
-        padding: 0;
-        margin: 0;
-        left: 5%;
+      margin-left: -100%;
+      transition: 0.6s;
+      ul {
+        width: 100%;
         @include colonne1();
-        height: 100vh;
-        margin-left: -100%;
-        transition: .6s;
-        ul{
+        .nav-links {
           width: 100%;
-          @include colonne1();
-          .nav-links{
-            width: 100%;
-            .nav-link{
-              font-size: $font-nav2;
-            }
-            .nav-active{
-              font-size: $font-nav2;
-            }
+          .nav-link {
+            font-size: $font-nav2;
           }
-        }
-        .nav-nav-bar{
-          @include colonne1();
-          width: 100%;
-          height: 25%;
-          .tel{
-            width: 100%;
-          }
-          .bouton-nav{
-            @include center();
-            height: 35%;
-            width: 35%;
-            padding: 1%;
-            .reservation{
-              width: 100%;
-            }
+          .nav-active {
+            font-size: $font-nav2;
           }
         }
       }
-      .nav.mobile-menu{
-        margin-left: 25%;
+      .nav-nav-bar {
+        @include colonne1();
+        width: 100%;
+        height: 25%;
+        .tel {
+          width: 100%;
+        }
+        .bouton-nav {
+          @include center();
+          height: 35%;
+          width: 35%;
+          padding: 1%;
+          .reservation {
+            width: 100%;
+          }
+        }
       }
-
     }
-    .burger{
-      display: block;
+    .nav.mobile-menu {
+      margin-left: 25%;
     }
+  }
+  .burger {
+    display: block;
+  }
 }
