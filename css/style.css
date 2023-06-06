@@ -152,6 +152,101 @@ footer .section-copyright .copyright-icon-list {
   gap: 1rem;
 }
 
+@media screen and (max-width: 1280px) {
+  footer {
+    padding: 2rem 1rem;
+  }
+  footer .section-footer-list {
+    gap: 0 1.5rem;
+  }
+  footer .section-footer-list ul li {
+    padding: 0.2rem 0;
+    line-height: 18px;
+  }
+  footer .section-footer-list ul li h3 {
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+  }
+  footer .section-footer-list ul li a {
+    font-size: 14px;
+  }
+  footer .section-footer-list ul li i {
+    font-size: 14px;
+    margin-right: 0.5rem;
+  }
+  footer .section-footer-list .flex-double {
+    padding: 0;
+  }
+  footer .section-footer-list .flex-double li {
+    font-size: 14px;
+  }
+  footer .section-footer-list .flex-double li p {
+    margin-bottom: 0.5rem;
+  }
+  footer .section-footer-list .flex-double li form input {
+    height: 30px;
+    font-size: 14px;
+  }
+  footer .section-footer-list .flex-double li form div {
+    height: 30px;
+    width: 30px;
+  }
+  footer .section-footer-list .contact-list {
+    padding: 0;
+  }
+  footer .separator-footer {
+    margin-bottom: 3rem;
+  }
+  footer .separator-footer figure {
+    transform: translate(-25%, -35%);
+  }
+  footer .section-copyright {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  footer {
+    padding: 2rem 0;
+  }
+  footer .section-footer-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0 2rem;
+    padding: 2rem;
+  }
+  footer .section-footer-list ul {
+    padding: 0 0 1rem 0;
+  }
+  footer .section-footer-list .flex-double {
+    grid-column: 2/3;
+  }
+  footer .section-footer-list .contact-list {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  footer .section-copyright {
+    padding: 0.5rem 2rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  footer {
+    padding: 1rem 0;
+  }
+  footer .section-footer-list {
+    padding: 2rem 1rem;
+  }
+  footer .section-copyright {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+  footer .section-copyright .copyright-icon-list {
+    margin-bottom: 1rem;
+  }
+  footer .section-copyright p {
+    text-align: center;
+    order: 2;
+  }
+}
 header {
   height: 100vh;
   background: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.332)), url(../assets/img/slider/img_bg_slider_home01.jpg);
@@ -298,6 +393,98 @@ header {
   color: #fff;
 }
 
+@media screen and (max-width: 640px) {
+  header .fleche {
+    position: absolute;
+    left: 150px;
+  }
+  header .section-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 40%;
+    top: 250px;
+    height: 60%;
+  }
+  header .section-nav h1 {
+    font-size: 4rem;
+    top: 50%;
+  }
+  header .section-nav .bouton2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .navbar {
+    width: 100%;
+    height: 100vh;
+  }
+  .navbar .logo {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+  }
+  .navbar .nav {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-left: -100%;
+    transition: 0.6s;
+  }
+  .navbar .nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav ul .nav-links {
+    width: 100%;
+  }
+  .navbar .nav ul .nav-links .nav-link {
+    font-size: 1.7rem;
+  }
+  .navbar .nav ul .nav-links .nav-active {
+    font-size: 1.7rem;
+  }
+  .navbar .nav .nav-nav-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+  }
+  .navbar .nav .nav-nav-bar .tel {
+    width: 100%;
+  }
+  .navbar .nav .nav-nav-bar .bouton-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+    width: 35%;
+    padding: 1%;
+  }
+  .navbar .nav .nav-nav-bar .bouton-nav .reservation {
+    width: 100%;
+  }
+  .navbar .nav.mobile-menu {
+    margin-left: 25%;
+  }
+  .burger {
+    display: block;
+  }
+}
 .section-photo-gallery {
   display: flex;
   flex-direction: column;
@@ -367,6 +554,98 @@ header {
   font-size: 0.7rem;
 }
 
+@media only screen and (max-width: 1280px) {
+  .section-photo-gallery .container-title-photo-gallery h2 {
+    font-size: 1.8rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery .textBgPhotoGallery {
+    font-size: 13.1vw;
+    top: 3%;
+  }
+  .section-photo-gallery .container-photo-gallery {
+    gap: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .section-photo-gallery {
+    gap: 2.3rem;
+    padding: 4rem 5rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery h2 {
+    font-size: 1.3rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery .textBgPhotoGallery {
+    font-size: 13.1vw;
+    top: 1%;
+  }
+  .section-photo-gallery .container-photo-gallery {
+    gap: 1rem;
+  }
+  .section-photo-gallery .btn-gallery {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .section-photo-gallery {
+    padding: 2.5rem 2.5rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery h2 {
+    font-size: 1.2rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery .subTitleGallery {
+    font-size: 0.7rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery .textBgPhotoGallery {
+    top: -2%;
+  }
+  .section-photo-gallery .container-photo-gallery {
+    gap: 0.8rem;
+  }
+  .section-photo-gallery .btn-gallery {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .section-photo-gallery {
+    padding: 1.2rem;
+    gap: 1.5rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery h2 {
+    font-size: 1rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery .subTitleGallery {
+    font-size: 0.6rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery .textBgPhotoGallery {
+    top: -3%;
+  }
+  .section-photo-gallery .container-photo-gallery {
+    gap: 0.7rem;
+  }
+  .section-photo-gallery .btn-gallery {
+    font-size: 0.6rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .section-photo-gallery {
+    gap: 1rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery h2 {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+  .section-photo-gallery .container-title-photo-gallery .subTitleGallery {
+    font-size: 0.6rem;
+  }
+  .section-photo-gallery .btn-gallery {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.5rem;
+  }
+  .section-photo-gallery .btn-gallery a i {
+    font-size: 0.5rem;
+  }
+}
 .section-our-chefs {
   background: url(../assets/img/our-chefs/imgbg-ourchefs.jpg) no-repeat center/cover;
   display: flex;
@@ -408,6 +687,61 @@ header {
   display: block;
 }
 
+@media only screen and (max-width: 1280px) {
+  .section-our-chefs {
+    padding: 6rem 4rem;
+  }
+  .section-our-chefs .container-title-our-chefs .textBgOurChefs {
+    font-size: 13.5vw;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .section-our-chefs {
+    padding: 6rem 4rem;
+  }
+  .section-our-chefs .container-title-our-chefs h2 {
+    font-size: 1.5rem;
+  }
+  .section-our-chefs .container-title-our-chefs .subTitle {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .section-our-chefs {
+    gap: 1.5rem;
+    padding: 4rem 2rem;
+  }
+  .section-our-chefs .container-title-our-chefs h2 {
+    font-size: 1rem;
+  }
+  .section-our-chefs .container-title-our-chefs .subTitle {
+    font-size: 0.6rem;
+  }
+  .section-our-chefs .container-title-our-chefs .textBgOurChefs {
+    top: 10%;
+  }
+  .section-our-chefs .container-img-all-chefs {
+    gap: 0.8rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .section-our-chefs {
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .section-our-chefs .container-title-our-chefs h2 {
+    font-size: 0.8rem;
+  }
+  .section-our-chefs .container-title-our-chefs .subTitle {
+    font-size: 0.5rem;
+  }
+  .section-our-chefs .container-title-our-chefs .textBgOurChefs {
+    top: 4%;
+  }
+  .section-our-chefs .container-img-all-chefs {
+    gap: 0.6rem;
+  }
+}
 .section-blog {
   background: #fff;
   color: #1e1e1e;
@@ -513,22 +847,6 @@ header {
 }
 
 @media screen and (max-width: 1280px) {
-  .section-photo-gallery .container-title-photo-gallery h2 {
-    font-size: 1.8rem;
-  }
-  .section-photo-gallery .container-title-photo-gallery .textBgPhotoGallery {
-    font-size: 13.1vw;
-    top: 3%;
-  }
-  .section-photo-gallery .container-photo-gallery {
-    gap: 1.2rem;
-  }
-  .section-our-chefs {
-    padding: 6rem 4rem;
-  }
-  .section-our-chefs .container-title-our-chefs .textBgOurChefs {
-    font-size: 13.5vw;
-  }
   .section-blog {
     padding: 4rem 5rem;
   }
@@ -560,84 +878,8 @@ header {
   .section-blog .container-all-logo-blog figure img {
     max-width: 80%;
   }
-  footer {
-    padding: 2rem 1rem;
-  }
-  footer .section-footer-list {
-    gap: 0 1.5rem;
-  }
-  footer .section-footer-list ul li {
-    padding: 0.2rem 0;
-    line-height: 18px;
-  }
-  footer .section-footer-list ul li h3 {
-    font-size: 22px;
-    margin-bottom: 0.5rem;
-  }
-  footer .section-footer-list ul li a {
-    font-size: 14px;
-  }
-  footer .section-footer-list ul li i {
-    font-size: 14px;
-    margin-right: 0.5rem;
-  }
-  footer .section-footer-list .flex-double {
-    padding: 0;
-  }
-  footer .section-footer-list .flex-double li {
-    font-size: 14px;
-  }
-  footer .section-footer-list .flex-double li p {
-    margin-bottom: 0.5rem;
-  }
-  footer .section-footer-list .flex-double li form input {
-    height: 30px;
-    font-size: 14px;
-  }
-  footer .section-footer-list .flex-double li form div {
-    height: 30px;
-    width: 30px;
-  }
-  footer .section-footer-list .contact-list {
-    padding: 0;
-  }
-  footer .separator-footer {
-    margin-bottom: 3rem;
-  }
-  footer .separator-footer figure {
-    transform: translate(-25%, -35%);
-  }
-  footer .section-copyright {
-    font-size: 12px;
-  }
 }
-@media screen and (max-width: 1024px) {
-  .section-photo-gallery {
-    gap: 2.3rem;
-    padding: 4rem 5rem;
-  }
-  .section-photo-gallery .container-title-photo-gallery h2 {
-    font-size: 1.3rem;
-  }
-  .section-photo-gallery .container-title-photo-gallery .textBgPhotoGallery {
-    font-size: 13.1vw;
-    top: 3%;
-  }
-  .section-photo-gallery .container-photo-gallery {
-    gap: 1rem;
-  }
-  .section-photo-gallery .btn-gallery {
-    font-size: 0.7rem;
-  }
-  .section-our-chefs {
-    padding: 6rem 4rem;
-  }
-  .section-our-chefs .container-title-our-chefs h2 {
-    font-size: 1.5rem;
-  }
-  .section-our-chefs .container-title-our-chefs .subTitle {
-    font-size: 0.8rem;
-  }
+@media only screen and (max-width: 1024px) {
   .section-blog {
     padding: 1.5rem 3rem;
     gap: 2rem;
@@ -675,7 +917,7 @@ header {
     max-width: 65%;
   }
 }
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .section-blog .container-title-blog .textBgBlog {
     top: 0;
   }
@@ -696,71 +938,7 @@ header {
     font-size: 0.75rem;
   }
 }
-@media screen and (max-width: 640px) {
-  .section-our-chefs {
-    gap: 1.5rem;
-    padding: 4rem 2rem;
-  }
-  .section-our-chefs .container-title-our-chefs h2 {
-    font-size: 1rem;
-  }
-  .section-our-chefs .container-title-our-chefs .subTitle {
-    font-size: 0.6rem;
-  }
-  .section-our-chefs .container-title-our-chefs .textBgOurChefs {
-    top: 10%;
-  }
-}
-@media screen and (max-width: 640px) and (max-width: 640px) {
-  header .fleche {
-    position: absolute;
-    left: 150px;
-  }
-  header .section-nav {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    width: 40%;
-    top: 250px;
-    height: 60%;
-  }
-  header .section-nav h1 {
-    font-size: 4rem;
-    top: 50%;
-  }
-  header .section-nav .bouton2 {
-    width: 100%;
-    text-align: center;
-  }
-  footer {
-    padding: 2rem 0;
-  }
-  footer .section-footer-list {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0 2rem;
-    padding: 2rem;
-  }
-  footer .section-footer-list ul {
-    padding: 0 0 1rem 0;
-  }
-  footer .section-footer-list .flex-double {
-    grid-column: 2/3;
-  }
-  footer .section-footer-list .contact-list {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  footer .section-copyright {
-    padding: 0.5rem 2rem;
-  }
-  .container-img-all-chefs {
-    gap: 0.8rem;
-  }
-}
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) {
   .section-blog .container-title-blog h2 {
     font-size: 1.25rem;
   }
@@ -790,46 +968,8 @@ header {
   .section-blog .container-all-logo-blog {
     gap: 1rem;
   }
-  footer {
-    padding: 2rem 0;
-  }
-  footer .section-footer-list {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0 2rem;
-    padding: 2rem;
-  }
-  footer .section-footer-list ul {
-    padding: 0 0 1rem 0;
-  }
-  footer .section-footer-list .flex-double {
-    grid-column: 2/3;
-  }
-  footer .section-footer-list .contact-list {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  footer .section-copyright {
-    padding: 0.5rem 2rem;
-  }
 }
-@media screen and (max-width: 550px) {
-  .section-our-chefs {
-    gap: 1.5rem;
-    padding: 2rem 1rem;
-  }
-  .section-our-chefs .container-title-our-chefs h2 {
-    font-size: 0.8rem;
-  }
-  .section-our-chefs .container-title-our-chefs .subTitle {
-    font-size: 0.5rem;
-  }
-  .section-our-chefs .container-title-our-chefs .textBgOurChefs {
-    top: 4%;
-  }
-  .section-our-chefs .container-img-all-chefs {
-    gap: 0.6rem;
-  }
+@media only screen and (max-width: 550px) {
   .section-blog {
     gap: 1rem;
     padding: 1rem 3rem;
@@ -853,7 +993,7 @@ header {
     font-size: 0.25rem;
   }
   .section-blog .container-all-article .container-text-article p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     margin-bottom: 1rem;
     line-height: 0.8rem;
   }
@@ -868,91 +1008,6 @@ header {
   }
   .container-all-logo-blog {
     gap: 1rem;
-  }
-  footer {
-    padding: 1rem 0;
-  }
-  footer .section-footer-list {
-    padding: 2rem 1rem;
-  }
-  footer .section-copyright {
-    flex-direction: column;
-    padding: 0.5rem 1rem;
-  }
-  footer .section-copyright .copyright-icon-list {
-    margin-bottom: 1rem;
-  }
-  footer .section-copyright p {
-    text-align: center;
-    order: 2;
-  }
-}
-@media screen and (max-width: 1110px) {
-  .navbar {
-    width: 100%;
-    height: 100vh;
-  }
-  .navbar .logo {
-    position: absolute;
-    left: 40px;
-    top: 40px;
-  }
-  .navbar .nav {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    left: 5%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    margin-left: -100%;
-    transition: 0.6s;
-  }
-  .navbar .nav ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar .nav ul .nav-links {
-    width: 100%;
-  }
-  .navbar .nav ul .nav-links .nav-link {
-    font-size: 1.7rem;
-  }
-  .navbar .nav ul .nav-links .nav-active {
-    font-size: 1.7rem;
-  }
-  .navbar .nav .nav-nav-bar {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 25%;
-  }
-  .navbar .nav .nav-nav-bar .tel {
-    width: 100%;
-  }
-  .navbar .nav .nav-nav-bar .bouton-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35%;
-    width: 35%;
-    padding: 1%;
-  }
-  .navbar .nav .nav-nav-bar .bouton-nav .reservation {
-    width: 100%;
-  }
-  .navbar .nav.mobile-menu {
-    margin-left: 25%;
-  }
-  .burger {
-    display: block;
   }
 }
 

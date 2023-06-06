@@ -47,3 +47,77 @@
     }
   }
 }
+
+@media only screen and (max-width: 1280px) {
+  .section-our-chefs {
+    padding: 6rem 4rem;
+    .container-title-our-chefs {
+      .textBgOurChefs {
+        font-size: 13.5vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-our-chefs {
+    padding: 6rem 4rem;
+    .container-title-our-chefs {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .subTitle {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-our-chefs {
+    gap: 1.5rem;
+    padding: 4rem 2rem;
+    .container-title-our-chefs {
+      h2 {
+        font-size: 1rem;
+      }
+
+      .subTitle {
+        font-size: 0.6rem;
+      }
+
+      .textBgOurChefs {
+        top: 10%;
+      }
+    }
+
+    .container-img-all-chefs {
+      gap: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .section-our-chefs {
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    .container-title-our-chefs {
+      h2 {
+        font-size: 0.8rem;
+      }
+
+      .subTitle {
+        font-size: 0.5rem;
+      }
+
+      .textBgOurChefs {
+        top: 4%;
+      }
+    }
+
+    .container-img-all-chefs {
+      gap: 0.6rem;
+    }
+  }
+}
