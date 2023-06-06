@@ -302,10 +302,68 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding: 6rem 7rem;
+  gap: 4rem;
+  position: relative;
 }
 .section-photo-gallery .container-title-photo-gallery {
   text-align: center;
   color: black;
+}
+.section-photo-gallery .container-title-photo-gallery h2 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: "Frank Ruhl Libre", serif;
+}
+.section-photo-gallery .container-title-photo-gallery .subTitleGallery {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.section-photo-gallery .container-title-photo-gallery .textBgPhotoGallery {
+  position: absolute;
+  top: -2%;
+  left: 0;
+  font-size: 13vw;
+  opacity: 0.1;
+  color: #c8a969;
+}
+.section-photo-gallery .container-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.section-photo-gallery .container-photo-gallery figure img {
+  max-width: 100%;
+  display: block;
+}
+.section-photo-gallery .container-photo-gallery .photo-gallery01 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.section-photo-gallery .container-photo-gallery .photo-gallery06 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.section-photo-gallery .btn-gallery {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background: #fff;
+  font-size: 0.8rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.section-photo-gallery .btn-gallery a {
+  color: black;
+}
+.section-photo-gallery .btn-gallery a i {
+  margin-left: 0.5rem;
+  align-self: center;
+  font-size: 0.7rem;
 }
 
 .section-our-chefs {
