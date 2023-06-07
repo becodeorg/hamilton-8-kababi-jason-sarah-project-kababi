@@ -30,6 +30,7 @@
       font-size: 13vw;
       opacity: 0.1;
       color: $gold;
+      z-index: 1;
     }
   }
 
@@ -73,6 +74,13 @@
         margin-left: 0.5rem;
         align-self: center;
         font-size: 0.7rem;
+      }
+    }
+
+    &:hover {
+      border: 1px solid $gold;
+      a {
+        color: $gold;
       }
     }
   }

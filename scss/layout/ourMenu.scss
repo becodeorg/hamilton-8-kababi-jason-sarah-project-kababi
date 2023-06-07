@@ -1,25 +1,26 @@
 .section-our-menu {
   background: $bgSpecialOffer;
   position: relative;
-  height: 1000px;
+  max-height: 900px;
   color: black;
-  padding: 8rem 6rem;
+  padding: 7rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
 
   & .fig-bread {
     position: absolute;
     top: 0;
     right: 0;
-    height: inherit;
-    min-width: 39%;
+    height: 100%;
+    max-width: 33%;
 
     & img {
-      max-height: 100%;
+      height: 100%;
       display: block;
-      min-width: 100%;
+      max-width: 100%;
+      object-fit: fill;
     }
   }
 
@@ -30,10 +31,16 @@
     h2 {
       font-size: 2rem;
       font-weight: 300;
+      margin-bottom: 0.8rem;
+    }
+
+    .subTitleOurMenu {
+      font-size: 1rem;
+      font-weight: 300;
     }
 
     .textBgOurMenu {
-      @include creatBgText(0%, 0%, 12vw, $gold);
+      @include creatBgText(3%, 0%, 13.1vw, $gold);
     }
   }
 
@@ -42,16 +49,22 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    z-index: 1;
+    z-index: 3;
 
     & li {
       display: flex;
       justify-content: space-between;
       gap: 5rem;
       align-items: center;
-      padding: 0.5rem 2rem;
+      padding: 0.6rem 2rem;
       background: $white;
       border-radius: 5px;
+      border: 3px solid $white;
+
+      &:hover {
+        border: 3px dashed $gold;
+        cursor: pointer;
+      }
 
       & .offer-list-item-text {
         line-height: 1.5rem;
@@ -70,6 +83,208 @@
           font-family: $fontTextArticleBlog;
           color: $gold;
           font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  & .fig-meat {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    z-index: 2;
+
+    & img {
+      display: block;
+      object-fit: fill;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-our-menu {
+    padding: 5rem 2.8rem;
+    .container-title-our-menu {
+      h2 {
+        font-size: 1.7rem;
+      }
+
+      .textBgOurMenu {
+        top: 10%;
+      }
+    }
+
+    & .list-our-menu {
+      & li {
+        & .offer-list-item-text {
+          h3 {
+            font-size: 0.9rem;
+          }
+        }
+
+        & .offer-list-item-price {
+          & .offer-price {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-our-menu {
+    max-height: inherit;
+    gap: 1.5rem;
+    .container-title-our-menu {
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .textBgOurMenu {
+        top: 4%;
+      }
+    }
+
+    & .list-our-menu {
+      grid-template-columns: 1fr;
+    }
+
+    & .fig-bread {
+      max-height: 60%;
+      max-width: 32%;
+    }
+
+    & .fig-meat {
+      bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .section-our-menu {
+    & .fig-bread {
+      max-height: 50%;
+    }
+
+    .container-title-our-menu {
+      .subTitleOurMenu {
+        font-size: 0.8rem;
+      }
+    }
+
+    & .fig-meat {
+      max-height: 60%;
+
+      & img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .section-our-menu {
+    .container-title-our-menu {
+      & .textBgOurMenu {
+        font-size: 14.5vw;
+        top: 5%;
+      }
+    }
+
+    & .fig-bread {
+      max-height: 40%;
+      max-width: 25%;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-our-menu {
+    padding: 4.5rem 2.5rem;
+    .container-title-our-menu {
+      h2 {
+        margin-bottom: 0.2rem;
+      }
+      & .textBgOurMenu {
+        font-size: 17.5vw;
+        top: 4.5%;
+      }
+    }
+
+    & .fig-bread {
+      display: none;
+    }
+
+    & .fig-meat {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .section-our-menu {
+    padding: 3rem 1.5rem;
+
+    .container-title-our-menu {
+      h2 {
+        font-size: 1.1rem;
+      }
+      .textBgOurMenu {
+        top: 3.2%;
+      }
+      .subTitleOurMenu {
+        font-size: 0.7rem;
+      }
+    }
+
+    & .list-our-menu {
+      & li {
+        padding: 0.6rem 1.5rem;
+        gap: 3rem;
+        .offer-list-item-text {
+          line-height: 1.2rem;
+
+          & p {
+            font-size: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .section-our-menu {
+    padding: 2.5rem 0.5rem;
+
+    .container-title-our-menu {
+      h2 {
+        font-size: 0.9rem;
+      }
+
+      .subTitleOurMenu {
+        font-size: 0.6rem;
+      }
+    }
+
+    .list-our-menu {
+      & li {
+        gap: 1rem;
+        .offer-list-item-text {
+          & h3 {
+            font-size: 0.8rem;
+          }
+        }
+
+        .offer-list-item-price {
+          .offer-price {
+            font-size: 1.2rem;
+          }
         }
       }
     }

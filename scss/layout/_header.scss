@@ -1,100 +1,209 @@
-header{
+header {
   height: 100vh;
-  background:$bg-nav;
-  background-size: cover; 
-}    
-.navbar{
+  background: $bg-nav;
+  background-size: cover;
+}
+.navbar {
   @include space-between();
   position: absolute;
   padding: 1%;
   margin: 1%;
   width: 95%;
   height: 15%;
-  .nav{
-      width: 80%;
-      @include space-around();
+  .nav {
+    width: 80%;
+    @include space-around();
+    height: 100%;
+    ul {
       height: 100%;
-      ul{
-          height: 100%;
-          width: 50%;
-          @include space-between();
-          .nav-links{
-              height: 100%;
-              @include space-around();
-              width: 12%;
-              .nav-active{
-                  @include space-around();
-                  color:$gold;
-                  font-size: $font-nav;
-                  height: 70%;
-              }
-              .nav-link{
-                  @include center();
-                  color:$white;
-                  font-size: $font-nav;
-                  height: 70%;
-              }
-          }
-      }
-      .nav-nav-bar{
+      width: 50%;
+      @include space-between();
+      .nav-links {
+        height: 100%;
+        @include space-around();
+        width: 12%;
+        .nav-active {
+          @include space-around();
+          color: $gold;
+          font-size: $font-nav;
+          height: 70%;
+        }
+        .nav-link {
           @include center();
-          height: 100%;
-          width: 35%;
-          .tel{
-              width: 50%;
-              @include center();
-              .nav-link{
-                  @include center();
-                  color: $gold;
-                  font-size: $font-nav;
-              }
-              #tel{
-                  @include center();
-                  color: $gold;
-                  font-size: $font-nav; 
-              }
-          }
-          .bouton-nav{
-              @include space-around();
-              background-color: $gold;
-              height: 60%;
-              width: 45%;
-              border-radius: 5px;
-              .nav-link{
-                  font-size: $font-nav;
-                  padding: 3%;
-              }
-              .reservation{
-                  color: $white;
-                  font-size: $font-nav; 
-              }
-          }
+          color: $white;
+          font-size: $font-nav;
+          height: 70%;
+        }
       }
+    }
+    .nav-nav-bar {
+      @include center();
+      height: 100%;
+      width: 35%;
+      .tel {
+        width: 50%;
+        @include center();
+        .nav-link {
+          @include center();
+          color: $gold;
+          font-size: $font-nav;
+        }
+        #tel {
+          @include center();
+          color: $gold;
+          font-size: $font-nav;
+        }
+      }
+      .bouton-nav {
+        @include space-around();
+        background-color: $gold;
+        height: 60%;
+        width: 45%;
+        border-radius: 5px;
+        .nav-link {
+          font-size: $font-nav;
+          padding: 3%;
+        }
+        .reservation {
+          color: $white;
+          font-size: $font-nav;
+        }
+      }
+    }
   }
-} 
-.navbar-responsive{
+}
+.navbar-responsive {
   display: none;
 }
-.burger{
-  display:none;
+.burger {
+  display: none;
   position: absolute;
   right: 50px;
   top: 50px;
   width: 35px;
   z-index: 100;
-}  
+}
 
-  .fleche{
-      position: relative;
-      top:25%;
-      left:34%; ;
+.fleche {
+  position: relative;
+  top: 25%;
+  left: 34%;
+}
+.section-nav {
+  @include colonne();
+  position: relative;
+  width: 40%;
+  left: 10%;
+  height: 70%;
+
+  h1 {
+    font-size: $fonth1;
+    width: 30%;
+    font-family: $fontFamily;
   }
-  .section-nav{
+  .bouton2 {
+    @include space-around();
+    width: 45%;
+    padding: 1%;
+    border: solid $white-transparent 2px;
+    border-radius: 5px;
+    p {
+      font-size: $font-nav;
+      font-family: $fontFamily;
+      color: $white;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    .fleche {
+      position: absolute;
+      left: 150px;
+    }
+    .section-nav {
       @include colonne();
       position: relative;
       width: 40%;
-      left: 10%;
-      height: 70%;
+      top: 250px;
+      height: 60%;
+      h1 {
+        font-size: $fonth1-2;
+        top: 50%;
+      }
+      .bouton2 {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .navbar {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    .logo {
+      position: absolute;
+      left: 40px;
+      top: 40px;
+    }
+
+    .nav {
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      @include colonnecenter();
+      height: 100vh;
+      width: 100vw;
+      margin-left: -100%;
+      transition: 0.6s;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      ul {
+        width: 100%;
+        @include colonnecenter();
+        .nav-links {
+          width: 100%;
+          @include center();
+          .nav-link {
+            font-size: $font-nav2;
+            @include space-around();
+          }
+          .nav-active {
+            font-size: $font-nav2;
+            @include space-around();
+          }
+        }
+      }
+      .nav-nav-bar {
+        @include colonne1();
+        width: 100%;
+        height: 25%;
+        .tel {
+          width: 100%;
+        }
+        .bouton-nav {
+          @include center();
+          height: 35%;
+          width: 35%;
+          padding: 1%;
+          .reservation {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .nav.mobile-menu {
+      margin-left: 0;
+    }
+  }
+  .burger {
+    display: block;
+  }
+}
 
 h1 {
   font-size: $fonth1;
@@ -103,7 +212,7 @@ h1 {
 }
 .bouton2 {
   @include space-around();
-  width: 45%;
+  width: 40%;
   padding: 1%;
   border: solid $white-transparent 2px;
   border-radius: 5px;
@@ -113,113 +222,3 @@ h1 {
     color: $white;
   }
 }
-}
-
-@media screen and (max-width: 640px) {
-header {
-  .fleche {
-    position: absolute;
-    left: 150px;
-  }
-  .section-nav {
-    @include colonne();
-    position: relative;
-    width: 40%;
-    top: 250px;
-    height: 60%;
-    h1 {
-      font-size: $fonth1-2;
-      top: 50%;
-    }
-    .bouton2 {
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
-}
-
-@media screen and (max-width: 1110px) {
-.navbar {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  .logo {
-    position: absolute;
-    left: 40px;
-    top: 40px;
-  }
-
-  .nav {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    @include colonnecenter();
-    height: 100vh;
-    width: 100vw;
-    margin-left: -100%;
-    transition: 0.6s;
-    z-index: 100;
-    backdrop-filter: blur(10px);
-    ul {
-      width: 100%;
-      @include colonnecenter();
-      .nav-links {
-        width: 100%;
-        @include center();
-        .nav-link {
-          font-size: $font-nav2;
-          @include space-around();
-        }
-        .nav-active {
-          font-size: $font-nav2;
-          @include space-around();
-        }
-      }
-    }
-    .nav-nav-bar {
-      @include colonne1();
-      width: 100%;
-      height: 25%;
-      .tel {
-        width: 100%;
-      }
-      .bouton-nav {
-        @include center();
-        height: 35%;
-        width: 35%;
-        padding: 1%;
-        .reservation {
-          width: 100%;
-        }
-      }
-    }
-  }
-  .nav.mobile-menu {
-    margin-left:0;
-  }
-}
-.burger {
-  display: block;
-}
-}
-
-      h1{
-          font-size: $fonth1;
-          width: 30%;
-          font-family: $fontFamily;
-      }
-      .bouton2{
-          @include space-around();
-          width: 40%;
-          padding: 1%;
-          border: solid $white-transparent 2px;
-          border-radius: 5px;
-          p{
-              font-size: $font-nav;
-              font-family: $fontFamily;
-              color: $white;
-          }
-      }
-     
