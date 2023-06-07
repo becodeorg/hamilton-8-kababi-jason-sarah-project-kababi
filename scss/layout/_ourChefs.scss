@@ -1,0 +1,126 @@
+.section-our-chefs {
+  background: url(../assets/img/our-chefs/imgbg-ourchefs.jpg) no-repeat
+    center/cover;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 100%;
+  padding: 8rem 6rem;
+  position: relative;
+
+  .container-title-our-chefs {
+    text-align: center;
+    font-family: $fontTextArticleBlog;
+
+    h2 {
+      font-weight: 400;
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .subTitle {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .textBgOurChefs {
+      position: absolute;
+      top: 7%;
+      left: 0;
+      font-size: 12.2vw;
+      opacity: 0.1;
+      color: $bgTextOurChefs;
+    }
+  }
+
+  .container-img-all-chefs {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    figure {
+      img {
+        max-width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .section-our-chefs {
+    padding: 6rem 4rem;
+    .container-title-our-chefs {
+      .textBgOurChefs {
+        font-size: 13.5vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-our-chefs {
+    padding: 6rem 4rem;
+    .container-title-our-chefs {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .subTitle {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-our-chefs {
+    gap: 1.5rem;
+    padding: 4rem 4rem;
+    .container-title-our-chefs {
+      h2 {
+        font-size: 1rem;
+      }
+
+      .subTitle {
+        font-size: 0.75rem;
+      }
+
+      .textBgOurChefs {
+        top: 10%;
+      }
+    }
+
+    .container-img-all-chefs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .section-our-chefs {
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    .container-title-our-chefs {
+      h2 {
+        font-size: 0.8rem;
+      }
+
+      .subTitle {
+        font-size: 0.6rem;
+      }
+
+      .textBgOurChefs {
+        top: 4%;
+      }
+    }
+
+    .container-img-all-chefs {
+      gap: 0.6rem;
+    }
+  }
+}

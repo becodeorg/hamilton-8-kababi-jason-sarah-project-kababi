@@ -1,0 +1,30 @@
+/*colors*/
+$gold: #c8a969;
+$white: #fff;
+$black: black;
+$transparent-black: rgba(0, 0, 0, 0.332);
+$color: red;
+$white-transparent: #ffffff7b;
+$textGreyFooter: #9d9e9f;
+$textBlackArticle: #1e1e1e;
+$bgTextArticle: #faf6f0;
+$bgTextOurChefs: #414141;
+$borderBtnGallery: #e2e2e2;
+
+/*baground*/
+$bg-nav: linear-gradient(to bottom right, $black, $transparent-black),
+  #{url(../assets/img/slider/img_bg_slider_home01.jpg)};
+
+$bgSectionBlog: #fff;
+$bgArticleText: #faf6f0;
+$bgSpecialOffer: #faf6f0;
+
+/*font*/
+$fontFamily: "Faustina", serif;
+$fontTextArticleBlog: "Frank Ruhl Libre", serif;
+$font-nav: 1.5rem;
+$fonth1: 6rem;
+$font-nav: 1.1rem;
+$fonth1: 6rem;
+$font-nav2: 1.7rem;
+$fonth1-2: 4rem;
