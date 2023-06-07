@@ -77,14 +77,14 @@
 @media only screen and (max-width: 640px) {
   .section-our-chefs {
     gap: 1.5rem;
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
     .container-title-our-chefs {
       h2 {
         font-size: 1rem;
       }
 
       .subTitle {
-        font-size: 0.6rem;
+        font-size: 0.75rem;
       }
 
       .textBgOurChefs {
@@ -93,7 +93,10 @@
     }
 
     .container-img-all-chefs {
-      gap: 0.8rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1.5rem;
     }
   }
 }
@@ -108,7 +111,7 @@
       }
 
       .subTitle {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
       }
 
       .textBgOurChefs {

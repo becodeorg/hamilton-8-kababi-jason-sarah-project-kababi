@@ -639,7 +639,7 @@ h1 {
 }
 @media only screen and (max-width: 640px) {
   .section-photo-gallery {
-    padding: 1.2rem;
+    padding: 2rem;
     gap: 1.5rem;
   }
   .section-photo-gallery .container-title-photo-gallery h2 {
@@ -649,10 +649,12 @@ h1 {
     font-size: 0.6rem;
   }
   .section-photo-gallery .container-title-photo-gallery .textBgPhotoGallery {
-    top: -3%;
+    top: 0%;
   }
   .section-photo-gallery .container-photo-gallery {
-    gap: 0.7rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
   }
   .section-photo-gallery .btn-gallery {
     font-size: 0.6rem;
@@ -741,19 +743,22 @@ h1 {
 @media only screen and (max-width: 640px) {
   .section-our-chefs {
     gap: 1.5rem;
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
   }
   .section-our-chefs .container-title-our-chefs h2 {
     font-size: 1rem;
   }
   .section-our-chefs .container-title-our-chefs .subTitle {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
   }
   .section-our-chefs .container-title-our-chefs .textBgOurChefs {
     top: 10%;
   }
   .section-our-chefs .container-img-all-chefs {
-    gap: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -765,7 +770,7 @@ h1 {
     font-size: 0.8rem;
   }
   .section-our-chefs .container-title-our-chefs .subTitle {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
   .section-our-chefs .container-title-our-chefs .textBgOurChefs {
     top: 4%;
@@ -978,7 +983,7 @@ h1 {
     font-size: 1.25rem;
   }
   .section-blog .container-title-blog .subTitle {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
   }
   .section-blog .container-all-article .article-blog {
     max-width: 80%;
@@ -999,6 +1004,7 @@ h1 {
   }
   .section-blog .container-all-article .container-text-article .btn-blog a {
     font-size: 0.53rem;
+    font-weight: 600;
   }
   .section-blog .container-all-article .container-text-article .btn-blog a i {
     font-size: 0.4rem;
@@ -1016,7 +1022,7 @@ h1 {
     font-size: 0.875rem;
   }
   .section-blog .container-title-blog .subTitle {
-    font-size: 0.375rem;
+    font-size: 0.6rem;
   }
   .section-blog .container-all-article .container-text-article {
     padding: 0.5rem 0.5rem;
