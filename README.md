@@ -52,4 +52,13 @@ The model we had to reproduce:
 
 - J0K3RY-03 [PROFILE](https://github.com/J0K3RY-03)
 
+  - Section Our Menu
+  - Section Photo Gallery
+  - Section Our Chefs
+  - Section Blog
+  - Footer
+
 - Sarah [PROFILE](https://github.com/Sarah2511)
+  - Header
+  - Section Catégory
+  - Section About US
