@@ -1,6 +1,6 @@
 # Project Kababi
 
-The aim of this project was to reproduce a model given to us. The project was carried out by teams of 2 people (duo).
+The aim of this project was to reproduce a model given to us. The project was carried out by teams of 2 people (duo) we had 4 days to do it and we had 3 weeks of training in web dev.
 
 ## Table of contents
 
