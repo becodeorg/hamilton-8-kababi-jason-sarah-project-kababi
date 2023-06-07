@@ -61,4 +61,4 @@ The model we had to reproduce:
 - Sarah [PROFILE](https://github.com/Sarah2511)
   - Header
   - Section Catégory
-  - Section About US
+  - Section About US (Pending deployment)
